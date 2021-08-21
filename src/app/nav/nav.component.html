@@ -1,0 +1,19 @@
+<nav>
+    <!--Search-name area section one-->
+    <div class="section-one">
+        <div class="container mt-3">
+            <form #searchForm="ngForm" (ngSubmit)="submitSearch(searchForm)">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-8"> <input type="text" class="form-control"
+                                placeholder="Enter github username..." style="text-align:center"
+                                [(ngModel)]="searchName" name="searchName">
+                        </div>
+                        <div class="col-sm-4"> <button type="submit" class="btn btn-danger">Search</button> </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--End of Search-name area-->
+</nav>

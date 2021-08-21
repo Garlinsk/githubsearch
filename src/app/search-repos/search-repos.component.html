@@ -1,0 +1,12 @@
+<!-- start of search repos section -->
+<div class="panel-body" *ngFor="let repository of repositories" class="mb-3 p-2">
+    <div class="row">
+        <div class="col-sm-12">
+            <h4 appChangecolor>{{repository.name|bolden}}</h4>
+            <div *ngIf="repository.description">
+                <p>{{repository.description}}</p>
+            </div>
+            <a href="{{repository.repositoryLink}}" class="btn btn-sm btn-info">View this project</a>
+        </div>
+    </div>
+</div>
